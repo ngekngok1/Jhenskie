@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="30dp">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/weatherback"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="@color/white"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="7dp">
+
+
+            <pl.droidsonroids.gif.GifImageView
+                android:id="@+id/sunrain"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="80dp"
+                android:src="@drawable/sunnyrain1"
+                android:visibility="invisible"></pl.droidsonroids.gif.GifImageView>
+
+            <pl.droidsonroids.gif.GifImageView
+                android:id="@+id/cloudy"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="80dp"
+                android:src="@drawable/cloudy"
+                android:visibility="invisible"></pl.droidsonroids.gif.GifImageView>
+
+            <pl.droidsonroids.gif.GifImageView
+                android:id="@+id/cloudynight"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="80dp"
+                android:src="@drawable/cloudynight"
+                android:visibility="invisible"></pl.droidsonroids.gif.GifImageView>
+
+            <pl.droidsonroids.gif.GifImageView
+                android:id="@+id/nightrain"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="80dp"
+                android:src="@drawable/nightrain"
+                android:visibility="invisible"></pl.droidsonroids.gif.GifImageView>
+
+            <pl.droidsonroids.gif.GifImageView
+                android:id="@+id/thunderstorm"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="80dp"
+                android:src="@drawable/thunderstorm"
+                android:visibility="invisible"></pl.droidsonroids.gif.GifImageView>
+
+            <pl.droidsonroids.gif.GifImageView
+                android:id="@+id/cloudyday"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="80dp"
+                android:src="@drawable/cloudyday"
+                android:visibility="invisible"></pl.droidsonroids.gif.GifImageView>
+
+
+            <TextView
+                android:id="@+id/loc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="40dp"
+                android:layout_marginBottom="-18dp"
+                android:layout_marginStart="8dp"
+                android:layout_gravity="bottom">
+            </TextView>
+
+            <TextView
+                android:id="@+id/loc1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:textSize="15dp"
+                android:layout_marginBottom="2dp"
+                android:layout_gravity="bottom">
+
+            </TextView>
+            <TextView
+                android:id="@+id/location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/loc"
+                android:layout_gravity="bottom"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="13dp"
+                android:gravity="end"
+                android:textSize="20dp" />
+
+
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+
+</RelativeLayout>
